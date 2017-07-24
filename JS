@@ -1,30 +1,52 @@
 var theBoard = [];
+var turn = 1; 
+var htmlTurn = document.getElementById('TurnIndicator');
 function createBoard(rows, columns){
    for(var i=0; i<rows; i++){
      theBoard[i] = [];
      for(var j=0; j<columns; j++){
-       theBoard[i][j] = "_";
+       theBoard[i][j] = 0;
      }
    }
 }
-createBoard(6, 7);
-theBoard[2][6]= "X";
+
+createBoard(7, 6);
+
 function pickColumn(column){
   if((column-1) > theBoard[0].length || (column-1) < 0){
-    console.log("Off the screen")
+    console.log("Off the screen");
+  }
+  else if(theBoard[column-1].indexOf(0) == -1){
+    console.log("Column is full");
   }
   else{
     var i = theBoard[column-1].length; 
-    while(i > 0){
-      console.log("The Board " + theBoard[column-1]);
-      console.log("I " +i);
-      if(theBoard[column-1][i-1] != "X"){
-        theBoard[column-1][i-1] = "X";
+    while(i >= 0){
+     
+      if(theBoard[column-1][i-1] != 1 && theBoard[column-1][i-1] !=2){
+        theBoard[column-1][i-1] = turn;
         break; 
       }
       i--; 
     }
+    updatePlayer();
+      console.log(theBoard);
+  }
+
+  
+}
+
+function checkWinner(token){
+  //
+}
+
+function updatePlayer(){
+  if(turn == 1){
+    htmlTurn.innerHTML = "Second Player's Turn";
+    turn = 2; 
+  }
+  else if(turn == 2){
+    htmlTurn.innerHTML = "First Player's Turn";
+    turn = 1; 
   }
 }
-pickColumn(3);
-console.log(theBoard);
