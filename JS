@@ -1,0 +1,30 @@
+var theBoard = [];
+function createBoard(rows, columns){
+   for(var i=0; i<rows; i++){
+     theBoard[i] = [];
+     for(var j=0; j<columns; j++){
+       theBoard[i][j] = "_";
+     }
+   }
+}
+createBoard(6, 7);
+theBoard[2][6]= "X";
+function pickColumn(column){
+  if((column-1) > theBoard[0].length || (column-1) < 0){
+    console.log("Off the screen")
+  }
+  else{
+    var i = theBoard[column-1].length; 
+    while(i > 0){
+      console.log("The Board " + theBoard[column-1]);
+      console.log("I " +i);
+      if(theBoard[column-1][i-1] != "X"){
+        theBoard[column-1][i-1] = "X";
+        break; 
+      }
+      i--; 
+    }
+  }
+}
+pickColumn(3);
+console.log(theBoard);
