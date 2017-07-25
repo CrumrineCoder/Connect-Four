@@ -1,6 +1,7 @@
 var theBoard = [];
 var turn = 1; 
 var htmlTurn = document.getElementById('TurnIndicator');
+var displayTable = document.getElementById('table');
 function createBoard(rows, columns){
    for(var i=0; i<rows; i++){
      theBoard[i] = [];
@@ -11,6 +12,19 @@ function createBoard(rows, columns){
 }
 
 createBoard(7, 6);
+
+
+function maintainBoard(){
+  var table = "<br />";
+  for(var i=0; i<theBoard[0].length; i++){
+    for(var j=0; j<theBoard.length; j++){
+      table+=theBoard[j][i]; 
+      table+=" "; 
+    }
+    table+=" <br /> ";
+  }
+  displayTable.innerHTML = table; 
+}
 
 function pickColumn(column){
   if((column-1) > theBoard[0].length || (column-1) < 0){
@@ -30,7 +44,7 @@ function pickColumn(column){
       i--; 
     }
     updatePlayer();
-      console.log(theBoard);
+    maintainBoard();
   }
 
   
