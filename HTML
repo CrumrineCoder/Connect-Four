@@ -2,8 +2,9 @@
 <p id="TurnIndicator">First Player's Turn</p>
 
 
-<button onclick="reset()"> Reset </button>
+<button onclick="reset()" id="reset"> Reset </button> <br />
 
+<div id="columnButtons">
 <button onclick="pickColumn(1)">1</button>
 <button onclick="pickColumn(2)">2</button>
 <button onclick="pickColumn(3)">3</button>
@@ -11,8 +12,9 @@
 <button onclick="pickColumn(5)">5</button>
 <button onclick="pickColumn(6)">6</button>
 <button onclick="pickColumn(7)">7</button>
+  </div>
 <span id="table"></span>
 
 <p> Victories </p> 
-<p> Player 1: </p> <span id="playerOneVictories"> </span>
-<p> Player 2: </p> <span id="playerTwoVictories"> </span>
+<p> Player 1:  <span id="playerOneVictories"> </span></p>
+<p> Player 2:<span id="playerTwoVictories"> </span> </p> 
