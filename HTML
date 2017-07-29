@@ -1,73 +1,20 @@
- <button onclick="statusUpdate()" id="special"></button>
-<div id="ultimateContainer">
-  <div id="sound"> </div>
-<div class="container">
- 
-<p> Session Length </p>
-<span id="sessionLength">00:25:00</span>
-<p> Minute </p>
-<button onclick="changeTime(-600,'sessionLength')"> -10 </button>
-<button onclick="changeTime(-300,'sessionLength')"> -5 </button>
-<button onclick="changeTime(-60,'sessionLength')"> -1 </button>
-<button onclick="changeTime(+60,'sessionLength')"> +1 </button>
-<button onclick="changeTime(+300,'sessionLength')"> +5 </button>
-<button onclick="changeTime(+600,'sessionLength')"> +10 </button>
-<p> Second </p>
-<button onclick="changeTime(-10,'sessionLength')"> -10 </button>
-<button onclick="changeTime(-5,'sessionLength')"> -5 </button>
-<button onclick="changeTime(-1,'sessionLength')"> -1 </button>
-<button onclick="changeTime(+1,'sessionLength')"> +1 </button>
-<button onclick="changeTime(+5,'sessionLength')"> +5 </button>
-<button onclick="changeTime(+10,'sessionLength')"> +10 </button>
-</div>
-<div class="container">
-<p> Short Break Length </p>
-<span id="shortBreakLength">00:05:00</span>
-<p> Minute </p>
-<button onclick="changeTime(-600,'shortBreakLength')"> -10 </button>
-<button onclick="changeTime(-300,'shortBreakLength')"> -5 </button>
-<button onclick="changeTime(-60,'shortBreakLength')"> -1 </button>
-<button onclick="changeTime(+60,'shortBreakLength')"> +1 </button>
-<button onclick="changeTime(+300,'shortBreakLength')"> +5 </button>
-<button onclick="changeTime(+600,'shortBreakLength')"> +10 </button>
-<p> Second </p>
-<button onclick="changeTime(-10,'shortBreakLength')"> -10 </button>
-<button onclick="changeTime(-5,'shortBreakLength')"> -5 </button>
-<button onclick="changeTime(-1,'shortBreakLength')"> -1 </button>
-<button onclick="changeTime(+1,'shortBreakLength')"> +1 </button>
-<button onclick="changeTime(+5,'shortBreakLength')"> +5 </button>
-<button onclick="changeTime(+10,'shortBreakLength')"> +10 </button>
-</div>
-<div class="container">
-<p> Long Break Length </p>
-<span id="longBreakLength">00:15:00</span>
-<p> Minute </p>
-<button onclick="changeTime(-600,'longBreakLength')"> -10 </button>
-<button onclick="changeTime(-300, 'longBreakLength')"> -5 </button>
-<button onclick="changeTime(-60, 'longBreakLength')"> -1 </button>
-<button onclick="changeTime(+60, 'longBreakLength')"> +1 </button>
-<button onclick="changeTime(+300, 'longBreakLength')"> +5 </button>
-<button onclick="changeTime(+600, 'longBreakLength')"> +10 </button>
-<p> Second </p>
-<button onclick="changeTime(-10, 'longBreakLength')"> -10 </button>
-<button onclick="changeTime(-5, 'longBreakLength')"> -5 </button>
-<button onclick="changeTime(-1, 'longBreakLength')"> -1 </button>
-<button onclick="changeTime(+1, 'longBreakLength')"> +1 </button>
-<button onclick="changeTime(+5, 'longBreakLength')"> +5 </button>
-<button onclick="changeTime(+10, 'longBreakLength')"> +10 </button>
-</div>
-  <br />
-<div class="container">
-<button onclick="pause()"> Pause </button>
-<button onclick="reset()"> Reset </button>
-<button onclick="changeTimer(shortBreakSeconds)"> Short Rest </button>
-<button onclick="changeTimer(longBreakSeconds)"> Long Rest </button>
-<button onclick="changeTimer(sessionSeconds)"> Session </button>
-</div>
-</div>
+<div id="playerVictory"></div>
+<p id="TurnIndicator">First Player's Turn</p>
 
-<p id="time" > 00:25:00 </p>
 
-<div id="myProgress">
-  <div id="myBar"></div>
-</div>
+<button onclick="reset()" id="reset"> Reset </button> <br />
+
+<div id="columnButtons">
+<button onclick="pickColumn(1)">1</button>
+<button onclick="pickColumn(2)">2</button>
+<button onclick="pickColumn(3)">3</button>
+<button onclick="pickColumn(4)">4</button>
+<button onclick="pickColumn(5)">5</button>
+<button onclick="pickColumn(6)">6</button>
+<button onclick="pickColumn(7)">7</button>
+  </div>
+<span id="table"></span>
+
+<p> Victories </p> 
+<p> Player 1:  <span id="playerOneVictories"> </span></p>
+<p> Player 2:<span id="playerTwoVictories"> </span> </p> 
