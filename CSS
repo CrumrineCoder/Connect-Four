@@ -1,41 +1,110 @@
-body{
-  background: #FFDC46;
-  color: #7F6D1B; 
+/* Entire Document */
+body {
+  background: #ffdc46;
+  color: #7f6d1b;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
-#columnButtons > button{
-  width: 50px;
 
+/* Nav */
+
+nav {
+  color: white;
+  background: black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  font-family: sans-serif;
+  font-family: "Circle", Verdana, Tahoma;
+  text-align: center;
+  vertical-align: middle;
 }
-button{
-  background: #CCB038; 
-   text-decoration: none;
+
+#nic {
+  color: #40cc33;
+  text-decoration: none;
+}
+
+#nic:hover {
+  color: #4a9943;
+}
+
+/* Buttons */
+
+button {
+  background: #ccb038;
+  text-decoration: none;
   border: none;
-  font-family: 'Bellefair', serif; 
-  text-align: center; 
+  font-family: "Bellefair", serif;
+  text-align: center;
+  border-radius:  3px 3px 10px 10px; 
 }
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background: #7f6d1b;
+}
+
+#columnButtons > button {
+  width: 50px;
+  height: 40px;
+  margin: 0 5px;
+}
+
 #reset{
-  margin: auto; 
+  font-size: 18px; 
+  border-radius: 0px; 
+  width: 100px; 
+  margin: 0px; 
+  padding: 0px; 
 }
-button:focus {outline:0;}
-button:hover{background: #7F6D1B;}
-.redToken{
-   background: red;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
- display: inline-block; 
+
+/* Turn  Header */
+
+#TurnIndicator {
+  font-size: 22px;
 }
-.blackToken{
-   background: black;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   display:  inline-block; 
+
+/* Connect 4 table */
+
+.redToken {
+  background: red;
 }
-.greyToken{
-   background: white;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-  display:  inline-block; 
+.blackToken {
+  background: black;
 }
+.greyToken {
+  background: white;
+}
+
+.greyToken,
+.blackToken,
+.redToken {
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 3px;
+  border: 2px solid #7f6d1b; 
+}
+
+/* Victories */
+
+ .victories{
+  color: black; 
+}
+
+#playerVictory{
+  font-size: 18px; 
+}
+
+.black{
+  color: black; 
+}
+
+.red{
+  color: red;
+}
+
