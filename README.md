@@ -2,6 +2,10 @@
 
 This is a front end project built as part of FreeCodeCamp's cirriculum. The website hosts the game Connect Four for two players locally. 
 
+## To Do
+
+* Needs to be responsive. 
+
 ## Authors
 
 * **Nicolas Crumrine** - *EVERYTHING* - [CrumrineCoder](https://github.com/CrumrineCoder)
