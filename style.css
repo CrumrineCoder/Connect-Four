@@ -105,10 +105,12 @@ button:hover {
 
 .black{
   color: black; 
+  display: inline; 
+  margin-right: 5px; 
 }
 
 .red{
   color: red;
-    margin-bottom: 100px; 
+  display: inline; 
 }
 
