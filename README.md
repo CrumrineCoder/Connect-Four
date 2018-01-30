@@ -1,6 +1,8 @@
 # Connect Four App
 
-This is a front end project built as part of FreeCodeCamp's cirriculum. The website hosts the game Connect Four for two players locally. 
+This is a web app that uses plain Javascript to play Connect Four locally between two players.
+
+This was built as part of FreeCodeCamp's frontend curriculum. I've built about three Tic-Tac-Toe games in my time so I got bored and made a Connect Four instead of the suggested Tic Tac Toe game. My five year old sister got bored of this game in like 3 minutes so I want to figure out how to make this more engaging.
 
 ## To Do
 
