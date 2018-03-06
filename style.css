@@ -113,4 +113,15 @@ button:hover {
   color: red;
   display: inline; 
 }
-
+@media only screen and (max-width: 460px) {
+	.greyToken,
+.blackToken,
+.redToken {
+	width: 30px; 
+	height: 30px; 
+}
+#columnButtons > button {
+	width: 30px;
+	height: 30px; 
+}
+}

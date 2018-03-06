@@ -33,6 +33,7 @@ function maintainBoard() {
     }
     table += " <br /> ";
   }
+  table += '<div id="columnButtons"> <button onclick="pickColumn(1)">1</button> <button onclick="pickColumn(2)">2</button> <button onclick="pickColumn(3)">3</button> <button onclick="pickColumn(4)">4</button> <button onclick="pickColumn(5)">5</button> <button onclick="pickColumn(6)">6</button> <button onclick="pickColumn(7)">7</button> </div>'
   displayTable.innerHTML = table;
 }
 // Initial commit to the HTML, blank slate. 
@@ -55,7 +56,7 @@ function pickColumn(column) {
         }
         i--;
       }
-      console.log(areFourConnected(turn));
+  //    console.log(areFourConnected(turn));
 
       updatePlayer();
 
@@ -88,7 +89,6 @@ function areFourConnected(player) {
         theBoard[i + 2][j] == player &&
         theBoard[i + 3][j] == player
       ) {
-        console.log("frog");
         displayWinner(player);
       }
     }
